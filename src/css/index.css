@@ -24,7 +24,7 @@
 
   /* button class */
   .button {
-    @apply inline-flex justify-center py-4 px-10 bg-transparent rounded-[40px_40px_20px_20px] text-[15px] text-black font-semibold;
+    @apply flex justify-center py-4 px-10 bg-transparent rounded-[40px_40px_20px_20px] text-[15px] text-black font-semibold;
   }
   .button-yellow {
     @apply bg-yellow;
@@ -32,4 +32,23 @@
   .button-pink {
     @apply bg-Lightpink;
   }
+}
+
+/* ===== HEADER SECTION ===== */
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
+}
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-[#fafafa] shadow-[0_0_12px_rgba(0,0,0,0.1)] rounded-[2rem] transition-all duration-400 opacity-0 origin-[0%_0%] scale-y-0;
+  }
+}
+.header__link {
+  @apply text-[15px] text-Lightgrey font-medium;
+}
+.header__link.active-link {
+  @apply relative text-black font-semibold;
+}
+.header__link.active-link::before {
+  @apply absolute content-[""] w-full h-[4px] top-3 left-0 bg-Lightpink rounded-full -z-10;
 }
