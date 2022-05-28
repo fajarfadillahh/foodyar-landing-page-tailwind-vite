@@ -1,4 +1,35 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
 /* ===== Add the Tailwind directives to your CSS ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== REUSABLE CSS CLASS ===== */
+@layer components {
+  /* section class */
+  .section {
+    @apply pt-32 pb-16;
+  }
+  .section-title {
+    @apply text-[28px] text-black font-bold mb-4;
+  }
+  .section-title span {
+    @apply relative before:absolute before:content-[""] before:w-full before:h-[7px] before:bottom-2 before:left-0 before:bg-Lightpink before:rounded-2xl before:-z-10;
+  }
+  .section-text {
+    @apply text-[15px] text-Lightgrey leading-text mb-8;
+  }
+
+  /* button class */
+  .button {
+    @apply inline-flex justify-center py-4 px-10 bg-transparent rounded-[40px_40px_20px_20px] text-[15px] text-black font-semibold;
+  }
+  .button-yellow {
+    @apply bg-yellow;
+  }
+  .button-pink {
+    @apply bg-Lightpink;
+  }
+}
