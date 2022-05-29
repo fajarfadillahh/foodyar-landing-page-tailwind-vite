@@ -81,3 +81,14 @@
 .menu__content-star {
   @apply inline-flex text-[1.2rem] text-yellow;
 }
+
+/* ===== STATISTIC SECTION ===== */
+.statistic__content {
+  @apply justify-self-center text-center;
+}
+.statistic__content-number {
+  @apply text-[24px] text-black font-bold mb-1;
+}
+.statistic__content-text {
+  @apply text-[15px] text-Lightgrey;
+}
