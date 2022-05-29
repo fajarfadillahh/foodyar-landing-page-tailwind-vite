@@ -35,6 +35,9 @@
 }
 
 /* ===== HEADER SECTION ===== */
+.header.sticky-action {
+  @apply shadow-[0_2px_12px_rgba(0,0,0,0.1)];
+}
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
@@ -102,4 +105,9 @@
 }
 .footer__content-link {
   @apply text-[15px] text-Lightgrey hover:underline hover:text-black;
+}
+
+/* ===== SCROLLUP SECTION ===== */
+.scrollup.scroll-action {
+  @apply opacity-100;
 }
