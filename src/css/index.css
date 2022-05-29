@@ -92,3 +92,14 @@
 .statistic__content-text {
   @apply text-[15px] text-Lightgrey;
 }
+
+/* ===== FOOTER SECTION ===== */
+.footer__content-title {
+  @apply text-[20px] text-black font-bold mb-4;
+}
+.footer__content-list {
+  @apply flex flex-col gap-2;
+}
+.footer__content-link {
+  @apply text-[15px] text-Lightgrey hover:underline hover:text-black;
+}
