@@ -52,3 +52,32 @@
 .header__link.active-link::before {
   @apply absolute content-[""] w-full h-[4px] top-3 left-0 bg-Lightpink rounded-full -z-10;
 }
+
+/* ===== MENU SECTION ===== */
+.menu__item {
+  @apply text-[15px] text-Lightgrey cursor-pointer;
+}
+.menu__item.item-active {
+  @apply inline-flex justify-center py-2 px-6 bg-yellow rounded-[3rem_3rem_1.5rem_1.5rem] text-black font-medium;
+}
+.menu__content {
+  @apply w-[230px] grid gap-4 cursor-pointer;
+}
+.menu__content-wrapper {
+  @apply grid gap-3;
+}
+.menu__content-data {
+  @apply text-center justify-self-center;
+}
+.menu__content-title {
+  @apply text-[20px] text-black font-semibold mb-1;
+}
+.menu__content-chef {
+  @apply text-[15px] text-Lightgrey;
+}
+.menu__content-rating {
+  @apply flex justify-self-center items-center gap-2;
+}
+.menu__content-star {
+  @apply inline-flex text-[1.2rem] text-yellow;
+}
