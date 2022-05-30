@@ -37,8 +37,11 @@
           Foodyar
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -56,13 +59,13 @@
             </li>
           </ul>
 
-          <a href="#" class="header__button button button-pink mt-6"
+          <a href="#" class="header__button button button-pink mt-6 md:mt-0"
             >My Kitchen</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
